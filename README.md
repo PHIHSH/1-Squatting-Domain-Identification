@@ -32,7 +32,7 @@ Original: facebook.com
 
 Detected:
 
-faceb00k.pw homo
+faceb00k.pw homograph
 facecook.us  bits
 facrbook.com.br typo
 facebook.online wrongTLD
@@ -47,14 +47,19 @@ bash install.sh
 
 ## APIs
 
-Try the demo:  argv[1]=squatting domain , argv[2]=your domain
+Try the demo:  argv[1]=potential squatting domain , argv[2]=your domain
+```
+python3 squatting_detect.py squatting_domain target_domain
+```
+
+Demo:
 
 ```
 >>> python3 squatting_detect.py xn--fcebook-8va.com facebook.com
 The analyzed domain and tld name is:
 Domain facebook
 TLD com
-xn--fcebook-8va.com is a homo of facebook.com
+xn--fcebook-8va.com is a homograph of facebook.com
 
 ------------------------------------------------------------
 >>> python3 squatting_detect.py fcaebook.com facebook.com
@@ -82,9 +87,14 @@ alice-bo.com is a combo of alice.com
 
 ```
 
-## FAST API
+## FAST API :rocket: :rocket: :rocket:
 
 We provide a fast API to auto scan 100+ popular brands. No need to specify the brand domain.
+```
+python3 squating_API_fast_screen.py your_domain_tld
+```
+
+Demo:
 ```
 ------------------------------------------------------------
 >>> python3 squating_API_fast_screen.py google-com.org
@@ -103,9 +113,10 @@ We provide a fast API to auto scan 100+ popular brands. No need to specify the b
 ```
 
 
-### Dataset OpenSource (Benchmark)
+## Brand Squatting Dataset OpenSource
 
-
+Squatting_dataset folder contains squatting domains for 766 brands.
+We apply our tool for 20 million DNS records.
 
 
 ## Squatting Methodology
@@ -126,3 +137,13 @@ DNStwist: https://github.com/elceef/dnstwist
 ## Disclaim and Reference
 
 This is a research prototype, use at your own risk.
+If you feel this tool is useful, cite the tool as SquatPhish is high appreiciated.
+
+
+## Acknowledgement
+
+Core contributor: ketian @ririhedou
+
+Thanks @0xorz for reproduction testing.
+
+Current version is 0.0.2, updated at June 04 2018

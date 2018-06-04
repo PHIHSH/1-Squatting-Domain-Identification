@@ -146,19 +146,14 @@ def get_squatting_type_by_compare_target_brand(target_domain_tld, squatting_doma
     squatting_dict = get_the_complete_list_of_squatting_domains(target_domain_tld)
     t = labeling_candidiates(qname, squatting_dict, target_domain_tld)
     if t:
-        print ("{} is a {} of {}".format(squatting_domain_tld,t,target_domain_tld))
+        print ("{} is a {} of {}".format(squatting_domain_tld, t, target_domain_tld))
     else:
         print ("Do not find the match")
 
 
-
 if __name__ == "__main__":
-
     sq_f = "xn--fcebook-8va.com"
     target = "facebook.com"
-
-    sq_f = "tianke.com"
-    target = "tianke.org"
 
     sq_f = sys.argv[1]
     target = sys.argv[2]
