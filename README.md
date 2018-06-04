@@ -1,3 +1,4 @@
+# Squatting Domain Identification
 ```
 
    _____                   _   _____  _     _     _
@@ -11,24 +12,47 @@
 
 ```
 
-# Squatting Domain Identification
+Welcome to SquatPhish-squatting-identification!
 
 Squatting-domain-dentification is part of SquatPhish project to identify squatting domains for popular brands.
 
 It supports Five types of squatting identifications
 
+- [x] Homograph Squatting
+- [x] Typo Squatting
+- [x] Bits Squatting
+- [x] Combo Squatting
+- [x] Wrong TLD
 
 
-## Squatting
+Examples could find here:
 
-We extend urlcrazy and DNStwist for more efficient squatting detection.
+```
+Original: facebook.com
+
+Detected:
+
+faceb00k.pw homo
+facecook.us  bits
+facrbook.com.br typo
+facebook.online wrongTLD
+facebook-fan.de combo
+
+```
+
+## Squatting Methodology
+
+We extend urlcrazy and DNStwist for more efficient squatting detection, by adding a lot of stuff.
 
 URLcrazy-0.5:  https://www.morningstarsecurity.com/research/urlcrazy
 
 DNStwist: https://github.com/elceef/dnstwist
 
++ increase homograph candidates
+
 + add combosquatting
 
++ make name consistent
 
 ## Commands 
 
