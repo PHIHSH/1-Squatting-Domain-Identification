@@ -116,7 +116,18 @@ Demo:
 ## Brand Squatting Dataset OpenSource
 
 Squatting_dataset folder contains squatting domains for 766 brands.
+
 We apply our tool for 20 million DNS records.
+
+Format is target-domain, squatting-domain, squatting-dmain in utf8, squatting type, IP
+
+Some records:
+```
+(u'facebook.com', 'facecook.us.', 'facecook.us', u'bits', '62.149.128.160')
+(u'facebook.com', 'xn--fcebook-8va.com.', u'f\xe0cebook.com', u'homo', '199.59.242.150')
+(u'github.com', 'ggithub.com.', 'ggithub.com', u'typo', '52.69.166.231')
+(u'github.com', 'gtihub.io.', 'gtihub.io', u'typo', '103.224.182.252')
+```
 
 
 ## Squatting Methodology
@@ -137,12 +148,13 @@ DNStwist: https://github.com/elceef/dnstwist
 ## Disclaim and Reference
 
 This is a research prototype, use at your own risk.
-If you feel this tool is useful, cite the tool as SquatPhish is high appreiciated.
+
+If you feel this tool is useful, cite the tool as :dog2: SquatPhish  :dog2: is high appreiciated.
 
 
 ## Acknowledgement
 
-Core contributor: ketian @ririhedou
+Core contributor: @ririhedou
 
 Thanks @0xorz for reproduction testing.
 
