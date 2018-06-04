@@ -47,6 +47,26 @@ bash install.sh
 
 ## APIs
 
+
+Try the demo:  argv[1]=squatting domain , argv[2]=original domain
+
+```
+>>> python3 squatting_detect.py xn--fcebook-8va.com facebook.com                                                                                                                ketian@ketian
+The analyzed domain and tld name is:
+Domain facebook
+TLD com
+xn--fcebook-8va.com is a homo of facebook.com
+
+------------------------------------------------------------
+>>> python3 squatting_detect.py fcaebook.com facebook.com                                                                                                                       ketian@ketian
+The analyzed domain and tld name is:
+Domain facebook
+TLD com
+fcaebook.com is a typo of facebook.com
+
+```
+
+
 ### FAST API
 
 
