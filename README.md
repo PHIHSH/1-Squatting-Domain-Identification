@@ -47,13 +47,12 @@ bash install.sh
 
 ## APIs
 
-Try the demo:  argv[1]=potential squatting domain , argv[2]=your domain
+Try the demo:  argv[1]=potential squatting domain, argv[2]=your domain
 ```
 python3 squatting_detect.py squatting_domain target_domain
 ```
 
 Demo:
-
 ```
 >>> python3 squatting_detect.py xn--fcebook-8va.com facebook.com
 The analyzed domain and tld name is:
@@ -89,7 +88,10 @@ alice-bo.com is a combo of alice.com
 
 ## FAST API :rocket: :rocket: :rocket:
 
-We provide a fast API to auto scan 100+ popular brands. No need to specify the brand domain.
+We provide a fast API to auto scan 100+ popular brands for squatting.
+
+No need to specify the brand domain this time.
+
 ```
 python3 squating_API_fast_screen.py your_domain_tld
 ```
@@ -145,11 +147,11 @@ DNStwist: https://github.com/elceef/dnstwist
 + make name consistent
 
 
-## Disclaim and Reference
+## Disclaimer and Reference
 
 This is a research prototype, use at your own risk.
 
-If you feel this tool is useful, cite the tool as :dog2: SquatPhish  :dog2: is high appreiciated.
+If you feel this tool is useful, cite the tool as :dog2: SquatPhish :dog2: is highly appreiciated.
 
 
 ## Acknowledgement
