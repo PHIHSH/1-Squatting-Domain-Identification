@@ -49,7 +49,8 @@ except ImportError:
     MODULE_WHOIS = False
     pass
 
-
+# TODO KE ADDED
+from .CONSTANTS_homo_mapping import HOMO_MAP_UNICODE
 
 DIR = path.abspath(path.dirname(sys.argv[0]))
 DIR_DB = 'database'
@@ -174,8 +175,7 @@ class DomainFuzz():
         }
 
 
-        #TODO KE ADDED
-        from CONSTANTS_homo_mapping import HOMO_MAP_UNICODE
+
 
         def count(dic):
             c = 0

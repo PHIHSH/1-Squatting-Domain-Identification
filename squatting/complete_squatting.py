@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
-from CONSTANTS_homo_mapping import HOMO_MAP_UNICODE
-from dnsTwist_squatting import get_squatting_domains_dict_from_dnstwist
-from urlCrazy_squatting import get_domains_from_url_crazy
+from squatting.CONSTANTS_homo_mapping import HOMO_MAP_UNICODE
+from squatting.dnsTwist_squatting import get_squatting_domains_dict_from_dnstwist
+from squatting.urlCrazy_squatting import get_domains_from_url_crazy
 
 import tldextract
 
