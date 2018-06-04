@@ -156,8 +156,8 @@ If you feel this tool is useful, cite the tool as :dog2: SquatPhish :dog2: is hi
 
 ## Acknowledgement
 
-Core contributor: @ririhedou
+Core contributor: ke tian @ririhedou
 
-Thanks @0xorz for reproduction testing.
+Thanks hang hu @0xorz for reproduction testing.
 
 Current version is 0.0.2, updated at June 04 2018
