@@ -8,6 +8,7 @@ __email__ = 'ririhedou@gmail.com'
 import idna
 import tldextract
 from squatting.complete_squatting import get_the_complete_list_of_squatting_domains
+import sys
 
 EDIT_DISTANCE_THRESHOLD = 2
 HYPHEN_DISTANCE_THRESHOLD = 4
@@ -158,5 +159,8 @@ if __name__ == "__main__":
 
     sq_f = "tianke.com"
     target = "tianke.org"
+
+    sq_f = sys.argv[1]
+    target = sys.argv[2]
 
     get_squatting_type_by_compare_target_brand(target, sq_f)
