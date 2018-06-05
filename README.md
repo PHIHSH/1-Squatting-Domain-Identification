@@ -86,7 +86,7 @@ alice-bo.com is a combo of alice.com
 
 ```
 
-## FAST API :rocket: :rocket: :rocket:
+## FAST Detection API :rocket: :rocket: :rocket:
 
 We provide a fast API to auto scan 100+ popular brands for squatting.
 
