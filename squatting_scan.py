@@ -1,7 +1,5 @@
 import sys
 
-import tldextract
-
 import SQUT_DIC
 import utils
 import squatting_type
@@ -30,7 +28,7 @@ def get_type(test):
         
         t = squatting_type.get_label(test, squatting_dict, brand)
         if t:
-            results.append([domain_tld, brand, t])
+            results.append([brand, t])
    
     return results
 

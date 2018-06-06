@@ -93,22 +93,22 @@ We provide a fast API to auto scan 100+ popular brands for squatting.
 No need to specify the brand domain this time.
 
 ```
-python3 squatting_scan.py.py your_domain_tld
+python3 squatting_scan.py your_domain_tld
 ```
 
 Demo:
 ```
 ------------------------------------------------------------
->>> python3 squatting_scan.py.py google-com.org
+>>> python3 squatting_scan.py google-com.org
 [Detection] [google-com.org] -> [google.com] -> [combo]
 ------------------------------------------------------------
->>> python3 squatting_scan.py.py google.tk
+>>> python3 squatting_scan.py google.tk
 [Detection] [google.tk] -> [google.com] -> [wrongTLD]
 ------------------------------------------------------------
->>>  python3 squatting_scan.py.py facecook.com
+>>>  python3 squatting_scan.py facecook.com
 [Detection] [facecook.com] -> [facebook.com] -> [bits]
 ------------------------------------------------------------
->>> python3 squatting_scan.py.py facedook.com
+>>> python3 squatting_scan.py facedook.com
 [Detection] [facedook.com] -> [facebook.com] -> [homo]
 ----------------------------------------------------------
 
