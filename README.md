@@ -14,7 +14,7 @@
 
 Welcome to SquatPhish-squatting-identification!
 
-Squatting-domain-dentification is part of SquatPhish project to identify squatting domains for popular brands.
+Squatting-Domain-Identification is part of SquatPhish project to identify squatting domains for popular brands.
 
 It supports Five types of squatting identifications
 
@@ -24,19 +24,14 @@ It supports Five types of squatting identifications
 - [x] Combo Squatting
 - [x] Wrong TLD
 
-
-Examples could find here:
-
 ```
-Original: facebook.com
+Traget: facebook.com
 
-Detected:
-
-faceb00k.pw homograph
-facecook.us  bits
-facrbook.com.br typo
-facebook.online wrongTLD
-facebook-fan.de combo
+faceb00k.pw: homograph
+facecook.us:  bits
+facrbook.com.br: typo
+facebook.online: wrongTLD
+facebook-fan.de: combo
 
 ```
 
@@ -47,71 +42,38 @@ bash install.sh
 
 ## APIs
 
-Try the demo:  argv[1]=potential squatting domain, argv[2]=your domain
+Get squatting type of a domain.
 ```
-python3 squatting_type.py squatting_domain target_domain
-```
+python3 squatting_type.py xn--fcebook-8va.com facebook.com
+homo
 
-Demo:
-```
->>> python3 squatting_type.py xn--fcebook-8va.com facebook.com
-The analyzed domain and tld name is:
-Domain facebook
-TLD com
-xn--fcebook-8va.com is a homograph of facebook.com
+python3 squatting_type.py fcaebook.com facebook.com
+typo
 
-------------------------------------------------------------
->>> python3 squatting_type.py fcaebook.com facebook.com
-The analyzed domain and tld name is:
-Domain facebook
-TLD com
-fcaebook.com is a typo of facebook.com
+python3 squatting_type.py facebook.com google.com
+None
 
-------------------------------------------------------------
->>> python3 squatting_type.py facebook.com google.com
-The analyzed domain and tld name is:
-Domain google
-TLD com
-Do not find the match
-
-------------------------------------------------------------
->>> python3 squatting_type.py alice-bo.com alice.com
-
-there is no existing csv from URLcrazy, we begin to generate it
-
-The analyzed domain and tld name is:
-Domain alice
-TLD com
-alice-bo.com is a combo of alice.com
-
+python3 squatting_type.py alice-bo.com alice.com
+combo
 ```
 
-## FAST Detection API :rocket: :rocket: :rocket:
-
-We provide a fast API to auto scan 100+ popular brands for squatting.
-
+Auto scan 100+ popular brands for squatting.
 No need to specify the brand domain this time.
 
-```
-python3 squatting_scan.py your_domain_tld
-```
-
 Demo:
 ```
 ------------------------------------------------------------
->>> python3 squatting_scan.py google-com.org
-[Detection] [google-com.org] -> [google.com] -> [combo]
-------------------------------------------------------------
->>> python3 squatting_scan.py google.tk
-[Detection] [google.tk] -> [google.com] -> [wrongTLD]
-------------------------------------------------------------
->>>  python3 squatting_scan.py facecook.com
-[Detection] [facecook.com] -> [facebook.com] -> [bits]
-------------------------------------------------------------
->>> python3 squatting_scan.py facedook.com
-[Detection] [facedook.com] -> [facebook.com] -> [homo]
-----------------------------------------------------------
+python3 squatting_scan.py google-com.org
+[google.com, combo]
 
+python3 squatting_scan.py google.tk
+[google.com, wrongTLD]
+
+python3 squatting_scan.py facecook.com
+[facebook.com, bits]
+
+python3 squatting_scan.py facedook.com
+[facebook.com, homo]
 ```
 
 

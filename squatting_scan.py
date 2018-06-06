@@ -1,6 +1,5 @@
 import sys
 
-import SQUT_DIC
 import utils
 import squatting_type
 
@@ -18,8 +17,8 @@ def get_type(test):
     if 'xn--' in test:
         test = utils.decode_punycode(test)
     
-    for brand in SQUT_DIC.SQUAT_D:
-        squatting_dict = SQUT_DIC.SQUAT_D[brand]
+    for brand in utils.SQUAT_D:
+        squatting_dict = utils.SQUAT_D[brand]
 
         brand_domain, brand_tld = utils.get_domain_tld(brand)
 

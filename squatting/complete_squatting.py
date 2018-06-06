@@ -5,16 +5,6 @@ from squatting.urlCrazy_squatting import get_domains_from_url_crazy
 import tldextract
 
 
-def test_constants_mappings():
-    for key in HOMO_MAP_UNICODE:
-        vals = HOMO_MAP_UNICODE[key]
-        print ("KEY", key)
-        for val in vals:
-            print (val),
-        print ("")
-    return
-
-
 def get_squatting_dict(domain_name, base_domain=None):
     """
     :param domain_name: e.g., facebook.com
