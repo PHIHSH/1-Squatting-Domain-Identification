@@ -62,7 +62,6 @@ No need to specify the brand domain this time.
 
 Demo:
 ```
-------------------------------------------------------------
 python3 squatting_scan.py google-com.org
 [google.com, combo]
 
