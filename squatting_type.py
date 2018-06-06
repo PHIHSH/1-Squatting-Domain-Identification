@@ -1,8 +1,6 @@
 import datetime
 import sys
 
-import tldextract
-
 import utils
 from squatting.complete_squatting import get_squatting_dict
 
@@ -18,7 +16,7 @@ def get_type(test, target):
     if 'xn--' in test:
         test = utils.decode_punycode(test)
 
-    print(test, target)
+    # print(test, target)
     squatting_dict = get_squatting_dict(target)
     t = get_label(test, squatting_dict, target)
 
@@ -59,9 +57,8 @@ def is_combo(test_domain, target_domain):
 
 def is_homo_bits_others(test_domain, squatting_dict):
     for key in squatting_dict:
-        for item in squatting_dict[key]:
-            if item == test_domain:
-                return key
+        if test_domain in squatting_dict[key]:
+            return key
     return None
 
 
