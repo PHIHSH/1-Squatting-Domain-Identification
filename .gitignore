@@ -20,3 +20,5 @@ appletest/**
 get_domain_name.py
 
 history_scan.py
+
+logging.csv
