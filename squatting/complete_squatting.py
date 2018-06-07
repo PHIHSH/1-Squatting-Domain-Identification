@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-
 from squatting.CONSTANTS_homo_mapping import HOMO_MAP_UNICODE
 from squatting.dnsTwist_squatting import get_squatting_domains_dict_from_dnstwist
 from squatting.urlCrazy_squatting import get_domains_from_url_crazy
@@ -9,17 +5,7 @@ from squatting.urlCrazy_squatting import get_domains_from_url_crazy
 import tldextract
 
 
-def test_constants_mappings():
-    for key in HOMO_MAP_UNICODE:
-        vals = HOMO_MAP_UNICODE[key]
-        print ("KEY", key)
-        for val in vals:
-            print (val),
-        print ("")
-    return
-
-
-def get_the_complete_list_of_squatting_domains(domain_name, base_domain=None):
+def get_squatting_dict(domain_name, base_domain=None):
     """
     :param domain_name: e.g., facebook.com
     :return:
