@@ -44,6 +44,9 @@ bash install.sh
 
 Get squatting type of a domain.
 ```
+python3 squatting_type.py [test domain] [target domain]
+[squatting type]
+
 python3 squatting_type.py xn--fcebook-8va.com facebook.com
 homo
 
